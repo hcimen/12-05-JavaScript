@@ -8,6 +8,15 @@
 <link rel="icon" href="icon.png">
 
 <script src="app.js" > </script>
+<script>
+    function download(text, name, type) {
+  var a = document.getElementById("a");
+  var file = new Blob([text], {type: type});
+  a.href = URL.createObjectURL(file);
+  a.download = name;
+}
+    
+</script>
 </head>
 <body>
 
@@ -25,14 +34,17 @@
         <button class="border-2 border-black border-solid rounded-lg w-36 h-16" id="upper" onclick="myFunctionupper()"> UPPER CASE </button>
         <button class="border-2 border-black border-solid rounded-lg w-36 h-16" id="lower" onclick="myFunctionlower()"> lower case </button>
         <button class="border-2 border-black border-solid rounded-lg w-36 h-16" id="capital" onclick="myFunctioncapitalize()"> Capitalize </button>    
-        <button type="reset" class="border-2 border-black border-solid rounded-lg w-36 h-16" id="clear" onclick ="myFunctionclear()"> Clear </button>
+        
     </div> <br>
     
     <div class="flex space-x-4 mx-auto w-1/2 h-16 rounded-full text-xl">
         <button class="border-2 border-black border-solid rounded-lg w-24 h-16" id="color" onclick="myFunctioncolor()"> Change Color </button>
         <button class="border-2 border-black border-solid rounded-lg w-24 h-16" id="nodisplay" onclick="myFunctionnodisplay()"> No Display </button>
-        <button class="border-2 border-black border-solid rounded-lg w-24 h-16" id="clear" onclick="myFunctiondisplay()"> Display </button>
+        <button class="border-2 border-black border-solid rounded-lg w-24 h-16" id="display" onclick="myFunctiondisplay()"> Display </button>
+        <button type="reset" class="border-2 border-black border-solid rounded-lg w-36 h-16" id="clear" onclick ="myFunctionclear()"> Delete Text </button>
+        <button type="reset" class="border-2 border-black border-solid rounded-lg w-36 h-16" id="clear" onclick ="myFunctionallclear()"> All Clear </button>
         <button class="border-2 border-black border-solid rounded-lg w-24 h-16" id="lorem" onclick ="myFunctionlorem()"> Lorem ipsum </button>
+  
 
     </div> <br>
 
@@ -40,6 +52,8 @@
         <textarea name="text" id="text" class="h-full w-full p-6" placeholder="Please type your text here"> </textarea>
     </div>
 </div>
+
+
 
 </body>
 
