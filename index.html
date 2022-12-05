@@ -15,28 +15,25 @@
 
     <div class="flex items-center justify-items-center space-x-4 mx-auto w-2/3 h-16 rounded-full text-xl">
 
-        <button class="border-2 border-black border-solid rounded-lg w-24 h-16" id="bold"> Bold </button>
-        <button class="border-2 border-black border-solid rounded-lg w-24 h-16" id="italic"> Italic </button>
-        <button class="border-2 border-black border-solid rounded-lg w-24" id="left"> <img class="h-16" src="left.png" alt="left alignment"> </button>
-        <button class="border-2 border-black border-solid rounded-lg w-24" id="center"> <img class="h-16" src="center.png" alt="center alignment"> </button>
-        <button class="border-2 border-black border-solid rounded-lg w-24" id="right"> <img class="h-16" src="right.png" alt="right alignment"> </button>
-        <button class="border-2 border-black border-solid rounded-lg w-24 h-16" id="upper"> Upper Case </button>
-        <button class="border-2 border-black border-solid rounded-lg w-24 h-16" id="lower"> Lower Case </button>
-        <button class="border-2 border-black border-solid rounded-lg w-24 h-16" id="capital"> Capitalize </button>    
-        <button class="border-2 border-black border-solid rounded-lg w-24 h-16" id="clear"> Clear </button>
+        <button class="border-2 border-black border-solid rounded-lg w-24 h-16" id="bold" onclick="document.getElementById('text').style.fontWeight = 'bold'"> Bold </button>
+        <button class="border-2 border-black border-solid rounded-lg w-24 h-16" id="italic" onclick="document.getElementById('text').style.fontStyle = 'italic'"> Italic  </button>
+        <button class="border-2 border-black border-solid rounded-lg w-24" id="left" onclick="document.getElementById('text').style.textAlign = 'left'"> <img class="h-16" src="left.png" alt="left alignment"> </button>
+        <button class="border-2 border-black border-solid rounded-lg w-24" id="center" onclick="document.getElementById('text').style.textAlign = 'center'"> <img class="h-16" src="center.png" alt="center alignment"> </button>
+        <button class="border-2 border-black border-solid rounded-lg w-24" id="right" onclick="document.getElementById('text').style.textAlign='right'"> <img class="h-16" src="right.png" alt="right alignment"> </button>
+        <button class="border-2 border-black border-solid rounded-lg w-24 h-16" id="upper" onclick="document.getElementById('text').style.textTransform='uppercase'"> Upper Case </button>
+        <button class="border-2 border-black border-solid rounded-lg w-24 h-16" id="lower" onclick="document.getElementById('text').style.textTransform='lowercase'"> Lower Case </button>
+        <button class="border-2 border-black border-solid rounded-lg w-24 h-16" id="capital" onclick="document.getElementById('text').style.textTransform='capitalize'"> Capitalize </button>    
+        <button type="reset" class="border-2 border-black border-solid rounded-lg w-24 h-16" id="clear" onclick ="document.getElementById('text').value = '' "> Clear </button>
+        <button class="border-2 border-black border-solid rounded-lg w-24 h-16" id="try" onclick="document.getElementById('text').style.color='red'"> Try </button>
+        <button class="border-2 border-black border-solid rounded-lg w-24 h-16" id="clear" onclick="document.getElementById('text').style.display='none'"> No Display </button>
+        <button type="reset" class="border-2 border-black border-solid rounded-lg w-24 h-16" id="clear" onclick ="document.getElementById('text').value = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.' "> Lorem ipsum </button>
+
     </div> <br>
 
     <div class="border-2 border-black border-solid w-5/6 mx-auto h-screen" >
-        <textarea name="text" id="text" class="h-full w-full p-6" placeholder="Please type your text here"></textarea>
+        <textarea name="text" id="text" class="h-full w-full p-6" placeholder="Please type your text here"> </textarea>
     </div>
 </div>
-
-<script>
-
-
-    
-</script>
-
 
 </body>
 
