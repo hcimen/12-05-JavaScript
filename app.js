@@ -24,6 +24,11 @@ function myFunctioncapitalize() {
 }
 function myFunctionclear() {
     document.getElementById('text').value = '';
+    document.getElementById('text').style.fontWeight = 'normal';
+    document.getElementById('text').style.fontStyle = 'normal';
+    document.getElementById('text').style.textAlign = 'left';
+    document.getElementById('text').style.textTransform = 'initial';
+    document.getElementById('text').style.color = 'black';
 }
 function myFunctioncolor() {
     document.getElementById('text').style.color='red';
